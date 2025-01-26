@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Personal Portfolio Website-Shwetha M N</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Production/Application Support Engineer</p>
+                <h1>Hi, I'm <span>Shwetha</span><br> Nagaraj From India </h1>
+            </div>
+        </div>
+    </div>
+   <!--------about------>
+    <div id="about">
+        <div class="container">
+           <div class="row">
+            <div class="about-col-1">
+            <img src="images/user.JPG">
+            </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    <br>
+                    Hi, I'm Shwetha, an Application Engineer with a passion for solving complex technical challenges and providing innovative solutions to optimize software and systems for users. With 8 years of experience in the industry<br><br>
+                    I specialize in bridging the gap between engineering teams and end-users, ensuring that applications are not only functional but also intuitive, scalable, and efficient.<br><br>
+My expertise lies in Monitoring,software integration, troubleshooting, system optimization, cloud computing,etc and I thrive in dynamic, fast-paced environments where I can continuously learn and grow. <br><br>
+I’m driven by a commitment to improving user experience, and I excel in troubleshooting and optimizing software to deliver exceptional performance and reliability.<br><br> </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Application/Production Support</span><br>technical challenges/troubleshooting, Linux,SQL</li>
+                    <li><span>Application Servers</span><br>Tomcat,Wildfly,JBoss</li>
+                    <li><span>Cloud Services & Monitoring Tools</span><br>AWS, Informatica, FRMS</li>
+                    <li><span>Database Management</span><br>Oracle, Mysql, Redshift</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>2020-Current</span><br>Senior Production Support Engineer at Epsilon </li>
+                    <li><span>2019-2020</span><br>MTS software Engineer at Tejosma Technologies</li>
+                    <li><span>2016-2017</span><br>Ruby on Rails developer at Kreatio software ltd</li>
+                    <li><span>2013-2016</span><br>Senior Support Engineer at Relyon soft Pvt Ltd</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2012-13</span><br>Graduate engineer From KVG College of engineering Sullia</li>
+                    <li><span>2008</span><br>12th STD From Kodimatta PU college Arsikere</li>
+                    <li><span>2006</span><br>Secondary School from Adichuchanagiri High School Arsikere</li>
+                </ul>
+              </div>
+             </div>
+           </div>
+        </div>
+    </div>
+    <!-----Contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope"></i>&nbsp shwetha.m21@gmail.com </p>
+                <p><i class="fa fa-phone"></i>&nbsp +91 8073734393</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa fa-facebook-square"></i></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square"></i></a>
+                    <a href=""><i class="fa fa-twitter-square"></i></i></a>
+                </div>
+             <a href="images/SHWETHA.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="copyright">
+        <p>copyright @ Shwetha.Made with <i class="fa fa-heart"></i>this wedsite</p>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("actiive-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+       
+    </script>
+</body>
+</html>
