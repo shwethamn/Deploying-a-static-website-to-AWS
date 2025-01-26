@@ -1,5 +1,5 @@
 Host the static website on S3 (simple storage services)
-I have created my personal portfolio website using html, css and JavaScript codes.
+In this project I have created my personal portfolio website using html, css and JavaScript codes.
 Hosting a static webpage using Amazon S3 (Simple Storage Service) is straightforward and involves a few key steps. Here's a step-by-step guide to get you started:
 Prerequisites:
 1.	AWS Account: Ensure you have an AWS account. If not, sign up at AWS.
@@ -75,4 +75,4 @@ After enabling static website hosting, S3 provides a URL for your hosted website
 •	In the Properties tab, under Static website hosting, you'll see an endpoint URL like
  
 •	Use this URL to access your hosted static website.
- 
+
