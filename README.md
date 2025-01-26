@@ -1,4 +1,3 @@
-Project1: 
 Host the static website on S3 (simple storage services)
 I have created my personal portfolio website using html, css and JavaScript codes.
 Hosting a static webpage using Amazon S3 (Simple Storage Service) is straightforward and involves a few key steps. Here's a step-by-step guide to get you started:
